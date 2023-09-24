@@ -124,4 +124,74 @@ video {
       width: 50%;
     }
   }
+
+  section {
+    display: flex;
+    align-items: center;
+
+    .ct {
+      color: lighten($csgo-ct, 15%);
+    }
+
+    .t {
+      color: lighten($csgo-t, 15%);
+    }
+
+    .scoresLeft {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 10%;
+
+      .team-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+
+        .team-logoScore {
+          position: relative;
+          text-align: center;
+          width: 100%;
+
+          h1 {
+            position: relative;
+            font-size: calc(var(--responsiveUnit) * 1.5);
+            z-index: 1;
+          }
+
+          img {
+            position: absolute;
+            inset: 0;
+            width: calc(var(--responsiveUnit) * 2.5);
+            height: auto;
+            filter: brightness(0.5);
+          }
+        }
+
+        h1,
+        p,
+        span {
+          margin: 0;
+          padding: 0;
+        }
+
+        p {
+          font-size: calc(var(--responsiveUnit) * 0.8);
+        }
+
+        span {
+          font-size: calc(var(--responsiveUnit) * 0.6);
+        }
+      }
+
+      .scoreHalfs {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
 }
