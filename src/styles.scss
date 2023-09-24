@@ -1,0 +1,42 @@
+$void: #ffffff00;
+$primary: #3880ff;
+$secondary: #3dc2ff;
+$tertiary: #5260ff;
+$success: #2dd36f;
+$warning: #ffc409;
+$danger: #eb445a;
+$dark: #222428;
+$medium: #92949c;
+$light: #f4f5f8;
+
+$csgo-light: #797e7e;
+$csgo-ct: #565f69;
+$csgo-t: #b29f68;
+
+:root {
+  --responsiveUnit: calc(1vmin + 1vmax);
+  --scrollbarWidth: 10px;
+}
+
+@font-face {
+  font-family: "Stratum2";
+  src: url("assets/font/stratum2-regular-webfont.ttf");
+}
+
+html,
+body,
+app-root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: "Stratum2", monospace;
+  transition: 50ms all;
+}
