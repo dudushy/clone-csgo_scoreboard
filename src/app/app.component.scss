@@ -31,11 +31,25 @@ video {
     position: absolute;
     inset: 0;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
     background: $danger;
     color: $light;
-    font-size: calc(var(--responsiveUnit) * 2);
+
+    h1 {
+      font-size: calc(var(--responsiveUnit) * 2);
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      width: calc(var(--responsiveUnit) * 8);
+      height: auto;
+      margin: 10%;
+      filter: invert(1);
+    }
   }
 }
 
@@ -53,33 +67,61 @@ video {
 
   header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: bold;
+    flex-direction: column;
+    align-items: stretch;
 
-    img {
-      width: calc(var(--responsiveUnit) * 2.5);
-      height: auto;
-      margin-right: 0.5%;
-    }
-
-    h1 {
-      margin: 0;
-      padding: 0;
-      font-size: calc(var(--responsiveUnit) * 1);
-    }
-
-    #headerLeft {
+    .headerTop {
       display: flex;
       align-items: center;
-      width: 90%;
+      justify-content: space-between;
+      width: 100%;
+      border-bottom: calc(var(--responsiveUnit) * 0.1) solid lighten($csgo-light, 30%);
+      padding-bottom: 0.5%;
+
+      img {
+        width: calc(var(--responsiveUnit) * 2.3);
+        height: auto;
+        margin-right: 0.5%;
+      }
+
+      h1 {
+        margin: 0;
+        padding: 0;
+        font-size: calc(var(--responsiveUnit) * 0.9);
+      }
     }
 
-    #headerRight {
+    .headerBottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 0.5%;
+
+      img {
+        width: calc(var(--responsiveUnit) * 2.1);
+        height: auto;
+        margin-right: 0.5%;
+      }
+
+      p {
+        margin: 0;
+        padding: 0;
+        font-size: calc(var(--responsiveUnit) * 0.8);
+      }
+    }
+
+    .headerLeft {
+      display: flex;
+      align-items: center;
+      width: 50%;
+    }
+
+    .headerRight {
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      width: 10%;
+      width: 50%;
     }
   }
 }
