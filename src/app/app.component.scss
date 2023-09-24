@@ -31,11 +31,25 @@ video {
     position: absolute;
     inset: 0;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
     background: $danger;
     color: $light;
-    font-size: calc(var(--responsiveUnit) * 2);
+
+    h1 {
+      font-size: calc(var(--responsiveUnit) * 2);
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      width: calc(var(--responsiveUnit) * 8);
+      height: auto;
+      margin: 10%;
+      filter: invert(1);
+    }
   }
 }
 
