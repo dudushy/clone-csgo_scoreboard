@@ -46,7 +46,7 @@ video {
   width: 67%;
   height: 53%;
   background: transparentize($color: #000000, $amount: 0.5);
-  backdrop-filter: blur(75px);
+  backdrop-filter: blur(25px);
   color: lighten($csgo-light, 30%);
   padding-block: 1.5%;
   padding-inline: 1%;
