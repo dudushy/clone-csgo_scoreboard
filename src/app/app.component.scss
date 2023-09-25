@@ -57,8 +57,8 @@ video {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  width: 70%;
-  height: 60%;
+  width: calc(var(--responsiveUnit) * 45);
+  height: calc(var(--responsiveUnit) * 20);
   background: transparentize($color: #000000, $amount: 0.5);
   backdrop-filter: blur(25px);
   color: lighten($csgo-light, 30%);
@@ -70,7 +70,7 @@ video {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    // height: 20%;
+    height: 20%;
 
     .headerTop {
       display: flex;
@@ -130,7 +130,7 @@ video {
   section {
     display: flex;
     align-items: center;
-    // height: 70%;
+    height: 75%;
 
     .ct {
       color: lighten($csgo-ct, 15%);
@@ -154,7 +154,7 @@ video {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: auto;
+        height: 100%;
         text-align: center;
 
         .team-logoScore {
@@ -176,7 +176,6 @@ video {
             position: absolute;
             width: calc(var(--responsiveUnit) * 3);
             height: calc(var(--responsiveUnit) * 3);
-            // height: auto;
             filter: brightness(0.5);
           }
         }
@@ -204,7 +203,6 @@ video {
         text-align: center;
         width: 100%;
         margin-block: 15%;
-        // height: 50%;
 
         h1,
         p {
@@ -227,6 +225,8 @@ video {
   footer {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    height: 5%;
 
     p {
       margin: 0;
