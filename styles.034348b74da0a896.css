@@ -1,1 +1,0 @@
-:root{--responsiveUnit:calc(1vmin + 1vmax);--scrollbarWidth: 10px}@font-face{font-family:Stratum2;src:url(stratum2-regular-webfont.d908bd226db88f60.ttf)}html,body,app-root{height:100%;width:100%;display:flex;align-items:stretch;margin:0;padding:0;border:0;overflow-x:hidden}*{font-family:Stratum2,monospace;transition:50ms all}
