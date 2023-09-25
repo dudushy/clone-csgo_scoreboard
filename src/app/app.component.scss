@@ -110,6 +110,15 @@ video {
         margin: 0;
         padding: 0;
         font-size: calc(var(--responsiveUnit) * 0.8);
+
+        a {
+          color: lighten($csgo-light, 30%);
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+            color: lighten($csgo-ct, 15%);
+          }
+        }
       }
     }
 
